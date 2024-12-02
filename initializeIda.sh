@@ -5,13 +5,12 @@
 # Download the IDA RPMs from repo and initialize.
 #
 # Usage:
-# [admin@fs123-alma9]$ bash initializeIda.sh <comma separated list of RPMs> 
-
+# [admin@fs123-alma9]$ bash initializeIda.sh <comma separated list of links to RPMs> 
 if [ -z $1 ]
 then
     echo "No list of RPMs specified"
     echo "Usage: "
-    echo "[admin@fs123-alma9]$ bash initializeIda.sh <RPM1,RPM2>
+    echo "[admin@fs123-alma9]$ bash initializeIda.sh <RPM1_link,RPM2_link>"
     exit 1
 fi
 
