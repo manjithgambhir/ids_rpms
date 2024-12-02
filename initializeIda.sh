@@ -20,6 +20,6 @@ sudo dnf install epel-release -y
 rpms=(${1//,/ })
 for rpm in "${rpms[@]}"; do
     wget $rpm
-    rpmFileName = $(basename $rpm)
+    rpmFileName=$(basename $rpm)
     sudo dnf install $rpmFileName -y
 done
