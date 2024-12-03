@@ -19,6 +19,6 @@ sudo dnf install epel-release -y
 
 rpms=(${1//,/ })
 for rpm in "${rpms[@]}"; do
-    wget $rpm -O idsRpm
-    sudo dnf install ./idsRpm -y
+    wget $rpm -O ~/ids.rpm
+    sudo dnf install ~/ids.rpm -y
 done
